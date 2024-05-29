@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Services | Wi-Fi Troubleshooting{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>Wi-Fi Troubleshooting</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>Tech Rescue LLC offers a comprehensive Wi-Fi troubleshooting service to address connectivity issues and
+            optimize your wireless network performance. Their expert technicians begin by conducting a thorough
+            assessment of your Wi-Fi setup, examining factors such as router placement, signal strength, and
+            interference sources. By utilizing advanced diagnostic tools and techniques, they identify the root cause of
+            any connectivity issues, whether it's signal attenuation, router misconfiguration, or interference from
+            neighboring networks.</p>
+
+        <p>Once the problem is pinpointed, Tech Rescue LLC implements targeted solutions to improve your Wi-Fi
+            experience. This may involve repositioning the router for optimal coverage, adjusting channel settings to
+            minimize interference, or upgrading equipment for better performance. Their technicians guide you through
+            the troubleshooting process, providing clear explanations and practical recommendations to enhance your
+            network reliability and speed. With Tech Rescue LLC's Wi-Fi troubleshooting service, you can enjoy seamless
+            connectivity for all your devices, whether you're streaming, gaming, or working from home.</p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}

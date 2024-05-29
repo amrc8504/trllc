@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Services | Computer Repair{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>Computer Repair</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>
+            At Tech Rescue LLC, we specialize in providing top-notch computer repair services to individuals and
+            small-businesses alike. We offer comprehensive solutions
+            tailored to address a wide range of computer issues promptly and effectively. From diagnosing hardware and
+            software problems to performing virus removal, we have the expertise and tools necessary
+            to restore your computer's functionality swiftly. Our commitment to quality, affordability, and customer
+            satisfaction sets us apart, making Tech Rescue LLC the go-to choice for all your computer repair needs.
+            Whether you're dealing with a sluggish system, a virus infection, or a hardware failure, trust us to deliver
+            reliable solutions and get you back up and running in no time.</p>
+
+        <p>Furthermore, at Tech Rescue LLC, we understand the importance of convenience and peace of mind for our
+            clients. That's why we offer flexible service options, including on-site repairs, remote assistance, and
+            drop-off/pick-up services, to accommodate your schedule and preferences. Our transparent pricing ensures you
+            know exactly what to expect without any hidden costs, and our quick turnaround times minimize downtime,
+            allowing you to get back to work or play without delay. Whether you're a home user in need of a computer
+            tune-up or a business grappling with network issues, Tech Rescue LLC is dedicated to providing reliable,
+            efficient, and personalized computer repair services tailored to your specific needs.</p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Services | RAM Installation{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>RAM Installation</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>Tech Rescue LLC's RAM installation service offers seamless and efficient upgrades to enhance the performance
+            of your computer. With a team of skilled technicians well-versed in the intricacies of RAM (Random Access
+            Memory) installation,
+            we ensure a hassle-free process from start to finish. Whether you're a business seeking to boost
+            productivity or an individual looking to optimize your gaming rig, Tech Rescue LLC's service caters to
+            diverse needs and specifications.</p>
+
+        <p>Our service begins with a comprehensive assessment of your system's requirements, followed by expert
+            recommendations tailored to your usage demands. Once the optimal RAM configuration is determined, we swiftly
+            and securely install the new memory modules, minimizing downtime and maximizing the
+            potential of your device. With Tech Rescue LLC's RAM installation service, you can expect reliable
+            performance enhancements backed by professional expertise and personalized attention to detail.</p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}

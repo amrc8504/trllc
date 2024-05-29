@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Services | PSU Installation{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>PSU Installation</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>Tech Rescue LLC's PSU (Power Supply Unit) installation service is a seamless solution for ensuring stable and
+            reliable power delivery to your computer system. We begin by evaluating your
+            system's power requirements and compatibility with various PSU options. We guide you through the selection process, considering factors
+            such as wattage, efficiency ratings, and modular design to tailor the solution to your needs.</p>
+
+        <p>Once the ideal PSU is chosen, Tech Rescue LLC handles the installation with precision and care. We
+            meticulously disconnect and remove the old power supply, ensuring proper disposal or recycling according to
+            environmental guidelines. With attention to detail, we install the new PSU securely, connecting all cables
+            and components to optimize airflow and minimize cable clutter. Through rigorous testing and quality checks,
+            we verify the functionality of the PSU to guarantee stable power delivery, safeguarding your system
+            against potential hardware issues. Tech Rescue LLC's PSU installation service provides peace of mind,
+            ensuring that your computer operates efficiently and reliably for all your computing needs.</p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}

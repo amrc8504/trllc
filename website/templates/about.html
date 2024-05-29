@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}TRLLC | About{% endblock %}
+
+{% block content %}
+
+<!-- <div class="about-hero">
+</div> -->
+
+<div class="container" style="height: auto;">
+
+    <h1 style="text-align: center;">OUR MISSION</h1>
+
+    <p>At Tech Rescue LLC, our mission is to provide reliable and effective solutions to our clients' computer-related
+        challenges. Rooted in a passion for technology cultivated since high school, we are committed to leveraging our
+        expertise in information technology to serve individuals and small businesses with integrity and excellence. Our
+        dedication to continuous learning and practical experience, ensures that we deliver the highest standard of
+        service and support. With a focus on client satisfaction and problem-solving, we aim to be the trusted partner
+        our clients turn to for all their computer repair and IT needs. At Tech Rescue LLC, we're not just fixing
+        computers; we're building lasting relationships and empowering our clients to navigate the digital world with
+        confidence.</p>
+
+    <h3 style="text-align: center;">A LITTLE ABOUT THE OWNER</h3>
+
+    <p>Hello, my name is Anthony Ryan. I am the owner of Tech Rescue LLC. I started the business in April 2024 with the
+        purpose of helping others with their technological needs. I have 5+ years of technological experience. Tech Rescue LLC
+        is a small business, and for the moment I am working alone. So, when I say we I mean <i style="font-style: italic;">me</i>. My interest for computers started when I was in
+        high school, I took a computer science class and I fell in love with coding. In fact, I programmed the very
+        website you are on right now.</p>
+
+    <p>Computer science started my interest in Computer Systems and Networks. I learned a lot about Information
+        Technology and
+        learned a lot of practical skills such as building a computer from scratch and creating a private network for
+        multiple computers and assigning them an IP address. About a year or so after I graduated high
+        school, I joined the Indiana Army National Guard as an Information Technology Specialist. I am currently in
+        college for Computer Science but I would like to get experience working with people and solving problems for
+        them. That's where you come in. I am excited to begin working with you.</p>
+    <p>Kindest Regards,</p>
+    <p style="font-style: italic;">Anthony Ryan</p>
+    <p>Owner, Tech Rescue LLC</p>
+    <div class="more-services-cont">
+        <a href="{{ url_for('views.bookservice') }}" id="learnmore-services" class="btn btn-primary">Book a Service With
+            Us Today!</a>
+    </div>
+</div>
+
+{% endblock %}

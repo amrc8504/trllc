@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Services | Computer Building{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>Computer Building</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>
+            Tech Rescue LLC offers a premium computer building service tailored to meet the diverse needs of its
+            clientele. With a focus on quality craftsmanship and personalized attention to detail, Tech Rescue LLC
+            ensures that each custom-built computer exceeds expectations in performance, reliability, and aesthetics.
+            We work closely with clients to understand their specific requirements, whether
+            it's for gaming, content creation, or professional use, and meticulously select the best components to
+            construct a system optimized for their needs. From high-end gaming rigs with top-of-the-line graphics cards
+            to powerful workstations equipped with the latest processors and ample storage, Tech Rescue LLC delivers
+            bespoke solutions that combine cutting-edge technology with expert craftsmanship.
+        </p>
+        <p>
+            Moreover, Tech Rescue LLC's commitment to customer satisfaction extends beyond the initial build process.
+            Their comprehensive service includes thorough testing, setup, and optimization to ensure that each computer
+            operates flawlessly upon delivery. Additionally, they provide ongoing support and maintenance services to
+            address any issues or upgrades that may arise, ensuring that clients can rely on their custom-built systems
+            for years to come.
+        </p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}

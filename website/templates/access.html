@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Services | Access Point Installation{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>Access Point Installation</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>Tech Rescue LLC's access point installation service provides a tailored solution to extend and optimize your
+            wireless network coverage for enhanced connectivity. We begin by assessing your
+            space and Wi-Fi requirements to identify the most suitable access point model and placement for optimal
+            signal strength and coverage. Whether you're expanding your existing network or establishing a new one, we
+            navigate you through the selection process, considering factors such as network speed, range, and device
+            compatibility.</p>
+
+        <p>Once the ideal access point is chosen, Tech Rescue LLC executes the installation process with precision and
+            expertise. We meticulously configure the access point settings to ensure seamless integration with your
+            network, implementing features such as SSID setup, encryption protocols, and guest networks for enhanced
+            security and flexibility. With meticulous attention to detail, we position the access point strategically
+            to minimize signal interference and maximize coverage throughout your space. Through comprehensive testing
+            and optimization, we validate the functionality of the access point and offer guidance on managing and
+            maintaining your wireless network for optimal performance. With Tech Rescue LLC's access point installation
+            service, you can enjoy reliable and high-speed wireless connectivity, empowering productivity and seamless
+            connectivity experiences.</p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Services | HDD/SSD Installation{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>HDD/SSD Installation</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>
+            Tech Rescue LLC offers expert hard-disk drive (HDD) and solid-state drive (SSD) installation services, providing
+            clients with reliable storage solutions to enhance performance and expand storage capacity. With a focus on
+            efficiency and precision, we meticulously install and configure hard drives and SSDs
+            to seamlessly integrate with clients' systems, ensuring optimal compatibility and functionality.</p>
+
+        <p>Whether clients are looking to upgrade their existing storage or replace faulty drives, Tech Rescue LLC
+            conducts thorough assessments to recommend the most suitable storage solutions tailored to their needs. From
+            high-speed SSDs for improved system responsiveness to high-capacity hard drives for extensive storage
+            requirements, they offer a diverse range of options to accommodate various use cases and budgets.</p>
+
+        <p>Tech Rescue LLC's commitment to quality extends beyond installation, encompassing thorough testing and
+            optimization to ensure reliable performance and data integrity. Their attention to detail and dedication to
+            customer satisfaction make them a trusted partner for efficient and professional hard drive and SSD
+            installation services.</p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}

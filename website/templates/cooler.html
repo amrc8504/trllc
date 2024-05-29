@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Services | CPU Cooler Installation{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>CPU Cooler Installation</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>Tech Rescue LLC offers a comprehensive CPU cooler installation service designed to optimize the performance
+            and longevity of your computer system. We ensure a hassle-free and
+            efficient installation process, catering to both novices and experienced users alike. Our service begins
+            with a thorough assessment of your system's requirements, taking into account factors such as CPU type, case
+            size, and cooling needs.</p>
+
+        <p>Once the assessment is complete, We provide expert recommendations on the most suitable CPU
+            cooler for your setup. Whether it's air cooling or liquid cooling solutions, we prioritize quality and
+            compatibility to maximize thermal efficiency and minimize noise levels. With meticulous attention to detail,
+            we handle every aspect of the installation process, from mounting the cooler securely to applying thermal
+            paste correctly. Tech Rescue LLC's CPU cooler installation service not only enhances your system's
+            performance but also ensures reliable cooling for sustained productivity and gaming sessions.</p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}
