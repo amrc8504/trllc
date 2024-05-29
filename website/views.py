@@ -40,7 +40,7 @@ def software():
 def malware():
     return render_template('malware.html')
 
-@views.route('/services/hdd-sdd-installation', methods=['GET', 'POST'])
+@views.route('/services/hdd-ssd-installation', methods=['GET', 'POST'])
 def hdd():
     return render_template('hdd.html')
 
