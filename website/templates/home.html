@@ -37,8 +37,6 @@ messages %} {% for category, message in messages %} {% if category ==
     </div>
 </div>
 
-
-
 <div id="container1">
 
     <br>
@@ -149,8 +147,9 @@ messages %} {% for category, message in messages %} {% if category ==
     </div>
     <div class="photo1">
         <div class="photo1-img">
-            <img id="woman-gaming" src="{{ url_for('static', filename='images/boy-gaming.svg') }}"
-                alt="A woman gaming on a desktop.">
+            <video id="woman-gaming" alt="A woman gaming on a desktop." autoplay loop muted>
+                <source src="{{ url_for('static', filename='videos/custom_pc.MP4') }}" type="video/mp4">
+            </video>
         </div>
     </div>
 </div>

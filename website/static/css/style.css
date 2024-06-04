@@ -311,7 +311,8 @@
 }
 
 .photo1-img {
-    margin: 50px;
+    margin: 0;
+    padding-right: 10px;
     display: block;
 }
 
@@ -341,7 +342,7 @@
 .text-backdrop {
     padding: 10px;
     border-radius: 10px;
-    padding-top: 30%;
+    padding-top: 20%;
 }
 
 .photo1-text p {
