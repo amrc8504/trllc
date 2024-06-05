@@ -10,9 +10,10 @@ def index():
 def about():
     return render_template('about.html')
 
+@views.errorhandler(404)
 @views.route('/gallery', methods=['GET', 'POST'])
 def gallery():
-    return render_template('gallery.html')
+    return 'The page you are looking for is currently in development.', 404
 
 @views.route('/services', methods=['GET', 'POST'])
 def services():
