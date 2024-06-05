@@ -10,6 +10,10 @@ def index():
 def about():
     return render_template('about.html')
 
+@views.route('/gallery', methods=['GET', 'POST'])
+def gallery():
+    return render_template('gallery.html')
+
 @views.route('/services', methods=['GET', 'POST'])
 def services():
     return render_template('services.html')

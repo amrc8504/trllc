@@ -147,7 +147,7 @@ messages %} {% for category, message in messages %} {% if category ==
     </div>
     <div class="photo1">
         <div class="photo1-img">
-            <video id="woman-gaming" alt="A woman gaming on a desktop." autoplay loop muted>
+            <video id="woman-gaming" alt="A woman gaming on a desktop." autoplay loop muted playsinline>
                 <source src="{{ url_for('static', filename='videos/custom_pc.MP4') }}" type="video/mp4">
             </video>
         </div>
