@@ -86,7 +86,6 @@
     width: 60%;
     height: 80%;
     border: 1px solid green;
-    border-radius: 10px;
     animation: slideInFromLeft 1.15s ease-out forwards;
 }
 
@@ -489,7 +488,7 @@
 
 #cont {
     border: 1px solid green;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 2%;
     animation: slideInFromLeft 1.15s ease-out forwards;
 }
