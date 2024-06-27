@@ -4,6 +4,7 @@ views = Blueprint('views', __name__)
 
 @views.route('/', methods=['GET', 'POST'])
 def index():
+    flash('Military and First Responders recieve a 15% discount', category='success')
     return render_template('home.html')
 
 @views.route('/about', methods=['GET', 'POST'])
