@@ -30,8 +30,8 @@
         <a class="nav-link" href="{{ url_for('views.about') }}">About</a>
         <!-- <a class="nav-link" href="{{ url_for('views.gallery') }}">Gallery</a> -->
         <a class="nav-link" href="{{ url_for('views.services') }}">Services</a>
-        <a class="nav-link" href="{{ url_for('views.bookservice') }}"><span class="btn btn-success booking">Book a
-            Service</span></a>
+        <a class="nav-link" href="{{ url_for('views.bookservice') }}">Book a Service</a>
+        <a class="nav-link" href="{{ url_for('views.estimate') }}"><span class="btn btn-success booking">Free Estimate</span></a>
       </div>
     </div>
   </div>
@@ -48,6 +48,25 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#service-select').change(function() {
+            var selectedService = $(this).val();
+            $.ajax({
+                url: '/price-estimate',  // Flask route to handle the request
+                type: 'POST',
+                data: {service: selectedService},
+                success: function(response) {
+                    $('#price').text(response);  // Update the text of h1#price
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', status, error);
+                }
+            });
+        });
+    });
+  </script>
   <script src="{{ url_for('static', filename='scripts/loader.js') }}"></script>
 </body>
 
@@ -91,7 +110,7 @@
                 d="M885.6 230.2L779.1 123.8a80.83 80.83 0 0 0-57.3-23.8c-21.7 0-42.1 8.5-57.4 23.8L549.8 238.4a80.83 80.83 0 0 0-23.8 57.3c0 21.7 8.5 42.1 23.8 57.4l83.8 83.8A393.82 393.82 0 0 1 553.1 553 395.34 395.34 0 0 1 437 633.8L353.2 550a80.83 80.83 0 0 0-57.3-23.8c-21.7 0-42.1 8.5-57.4 23.8L123.8 664.5a80.89 80.89 0 0 0-23.8 57.4c0 21.7 8.5 42.1 23.8 57.4l106.3 106.3c24.4 24.5 58.1 38.4 92.7 38.4 7.3 0 14.3-.6 21.2-1.8 134.8-22.2 268.5-93.9 376.4-201.7C828.2 612.8 899.8 479.2 922.3 344c6.8-41.3-6.9-83.8-36.7-113.8z">
               </path>
             </svg></a></li>
-        <li><a href="mailto:antryan@techrescuellc.com"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+        <li><a href="mailto:service@techrescuellc.com"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
               viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M20,4H6C4.897,4,4,4.897,4,6v5h2V8l6.4,4.8c0.178,0.133,0.389,0.2,0.6,0.2s0.422-0.067,0.6-0.2L20,8v9h-8v2h8 c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M13,10.75L6.666,6h12.668L13,10.75z">

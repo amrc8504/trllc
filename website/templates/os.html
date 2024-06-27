@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Services | OS Installation{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont" style="padding: 5%;">
+    <div id="cont" class="conatiner"
+        style="background-color: rgba(0, 0, 0, 0.808); backdrop-filter: blur(4px); width: 100%; height: 100%; color: white;">
+        <div style="background-color: #0F530E; border-radius: 50%; width: fit-content;" class="back-bubble">
+            <a style="color: #66FF00;" href="{{ url_for('views.services') }}"><svg
+                    style="margin-left: 1px; margin-top: 1px; height: auto; width: 50px;" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
+                </svg></a>
+        </div><br>
+        <h1>Operating System Installation</h1>
+        <hr style="color: #66FF00;">
+        </hr>
+
+        <p>Tech Rescue LLC specializes in comprehensive malware removal services, providing swift and effective
+            solutions to rid clients' systems of harmful software and restore optimal performance. Leveraging
+            state-of-the-art tools and extensive expertise in cybersecurity, their skilled technicians meticulously
+            scan, identify, and eradicate a wide range of malware, including viruses, spyware, adware, and trojans.</p>
+
+        <p>With a commitment to restoring clients' digital environments to a secure state, Tech Rescue LLC employs a
+            systematic approach to malware removal, ensuring thorough cleansing while minimizing disruption to normal
+            operations. Their technicians prioritize data integrity and system stability throughout the removal process,
+            utilizing advanced techniques to eliminate malware remnants and prevent future infections.</p>
+
+        <p>Whether it's a home computer infected with adware or a business network compromised by sophisticated
+            malware, Tech Rescue LLC delivers tailored solutions to effectively neutralize threats and fortify defenses
+            against future attacks. Their proactive stance, coupled with prompt and professional service, makes Tech
+            Rescue LLC the go-to choice for reliable and efficient malware removal expertise.</p>
+
+        <img style="width: 100px;" src="{{ url_for('static', filename='images/blogo.png') }}">
+    </div>
+</div>
+
+{% endblock %}

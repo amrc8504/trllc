@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, flash, url_for, request, Markup
+from flask import Blueprint, render_template, redirect, flash, url_for, request, Markup, jsonify
 
 views = Blueprint('views', __name__)
 
@@ -25,6 +25,37 @@ def bookservice():
 
 
 
+
+service_estimates = {
+    "Access Point Installation": "$125",
+    "Anti-Virus Installation": "$25",
+    "Computer Building": "$400+ *",
+    "Computer Cleaning": "$30",
+    "Computer Repair": "$250+ *",
+    "CPU Cooler Installation": "$60",
+    "CPU Installation": "$70",
+    "HDD/SSD Installation": "$25",
+    "Malware Removal": "$120",
+    "OS Installation": "$150",
+    "PSU Installation": "$80",
+    "RAM Installation": "$25",
+    "Router Installation": "$100",
+    "Switch Installation": "$120",
+    "Wi-Fi Troubleshooting": "$100+ *"
+}
+
+@views.route('/price-estimate', methods=['POST'])
+def price_estimate():
+    selected_service = request.form['service']
+    estimate = service_estimates.get(selected_service, "Please select a service.")
+    return jsonify(estimate)
+
+@views.route('/price-estimate', methods=['GET', 'POST'])
+def estimate():
+    return render_template('estimate.html')
+
+
+
 @views.route('/services/computer-cleaning', methods=['GET', 'POST'])
 def cleaning():
     return render_template('cleaning.html')
@@ -44,6 +75,10 @@ def software():
 @views.route('/services/malware-spyware-removal', methods=['GET', 'POST'])
 def malware():
     return render_template('malware.html')
+
+@views.route('/services/operating-system-installation', methods=['GET', 'POST'])
+def os():
+    return render_template('os.html')
 
 @views.route('/services/hdd-ssd-installation', methods=['GET', 'POST'])
 def hdd():

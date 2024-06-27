@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}TRLLC | Price Estimate{% endblock %}
+
+{% block content %}
+
+<div class="iframe-cont">
+<div class="main-estimate">
+    <br>
+    <div class="container" id="quote-box">
+        <div class="estimate-header">
+            <h1>Get your free estimate.</h1>
+            <p>*All prices are <b>estimates</b> and are subject to change depending on parts needed and other job tasks.</p>
+            <br>
+            <hr style="color: #66FF00;">
+        </div>
+        <br>
+
+        <div class="card text-center">
+            <div class="card-header">
+              Your Cost Estimate
+            </div>
+            <div class="card-body">
+                <label for="service-select"></label>
+        <select name="service-select" id="service-select">
+            <option value="#">-- Select Service --</option>
+            <option value="Access Point Installation">Access Point Installation</option>
+            <option value="Anti-Virus Installation">Anti-Virus Installation</option>
+            <option value="Computer Building">Computer Building</option>
+            <option value="Computer Cleaning">Computer Cleaning</option>
+            <option value="Computer Repair">Computer Repair</option>
+            <option value="CPU Cooler Installation">CPU Cooler Installation</option>
+            <option value="CPU Installation">CPU Installation</option>
+            <option value="HDD/SSD Installation">HDD/SSD Installation</option>
+            <option value="Malware Removal">Malware Removal</option>
+            <option value="OS Installation">Operating System Installation</option>
+            <option value="PSU Installation">PSU Installation</option>
+            <option value="RAM Installation">RAM Installation</option>
+            <option value="Router Installation">Router Installation</option>
+            <option value="Switch Installation">Switch Installation</option>
+            <option value="Wi-Fi Troubleshooting">Wi-Fi Troubleshooting</option>
+        </select>
+              <h1 class="price" id="price">Please select a service.</h1>
+              <p class="card-text">If you do not see a service you need listed, please call <a style="color: green" href="tel:(219)588-1104">(219)588-1104</a>.</p>
+              <a class="btn btn-success hero-button" style="text-decoration: none;"
+                href="{{ url_for('views.bookservice') }}">Book a Service</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                * = Depending on your budget and/or needs.
+            </div>
+          </div>
+        <br>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
